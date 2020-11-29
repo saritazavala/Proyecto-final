@@ -1,3 +1,6 @@
+#Sara Zavala
+#Ultimo proyecto
+#Graficas por computador
 
 vertex_shader = """
 #version 460

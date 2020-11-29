@@ -1,3 +1,6 @@
+#Sara Zavala
+#Ultimo proyecto
+#Graficas por computador
 def cross(a, b):
        c = [a[1]*b[2] - a[2]*b[1],
             a[2]*b[0] - a[0]*b[2],
