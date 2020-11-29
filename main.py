@@ -1,4 +1,6 @@
-
+#Sara Zavala
+#Ultimo proyecto
+#Graficas por computador
 
 import pygame
 from pygame.locals import *
@@ -7,8 +9,6 @@ from pygame.math import Vector2, Vector3
 from gl import Renderer, Model
 import shaders
 import glm
-
-
 
 deltaTime = 0.0
 
