@@ -31,7 +31,6 @@ angle = 0
 r.setShaders(shaders.vertex_shader, shaders.fragment_shader)
 
 active_shader = 0
-
 r.modelList.append(Model('./Models/model.obj', './Textures/model.bmp', 1))
 r.modelList.append(Model('./Models/spiderman.obj', './Textures/spider1.bmp', 1))
 r.modelList.append(Model('./Models/doctor.obj', './Textures/doctor.bmp', 1))
@@ -43,9 +42,7 @@ pygame.mixer.music.play(-1)
 
 while isPlaying:
 
-    # Para revisar si una tecla esta presionada
     keys = pygame.key.get_pressed()
-
     # Movimiento de camara horizontalmente
     if keys[pygame.K_a]:
         r.camRot.y -= 24* deltaTime
@@ -77,8 +74,6 @@ while isPlaying:
         r.camPos.y += 1 * deltaTime
     if keys[pygame.K_DOWN]:
         r.camPos.y -= 1 * deltaTime
-    
-
     for ev in pygame.event.get():
         if ev.type == pygame.QUIT:
             isPlaying = False
@@ -121,7 +116,6 @@ while isPlaying:
 
     # Main Renderer Loop
     r.render()
-
     pygame.display.flip()
     clock.tick(60)
     deltaTime = clock.get_time() / 1000

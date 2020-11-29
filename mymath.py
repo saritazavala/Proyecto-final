@@ -2,16 +2,17 @@
 #Ultimo proyecto
 #Graficas por computador
 def cross(a, b):
-       c = [a[1]*b[2] - a[2]*b[1],
-            a[2]*b[0] - a[0]*b[2],
-            a[0]*b[1] - a[1]*b[0]]
-       return c
+    c = [a[1]*b[2] - a[2]*b[1],
+    a[2]*b[0] - a[0]*b[2],
+    a[0]*b[1] - a[1]*b[0]]
+
+    return c
 
 def substractV3(a, b):
-       c = [a[0]-b[0],
-            a[1]-b[1],
-            a[2]-b[2]]
-       return c
+    c = [a[0]-b[0],
+    a[1]-b[1],
+    a[2]-b[2]]
+    return c
 
 def root(x,a):
     y = 1 / a
@@ -32,7 +33,7 @@ def deg2rad(a):
     return a
 
 def matrixmul(a, b):
-    c=[]
+    c = []
     for i in range(len(a)):
         c.append([0]*len(b[0]))
 
